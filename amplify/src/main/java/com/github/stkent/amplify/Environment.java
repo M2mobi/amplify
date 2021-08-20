@@ -75,14 +75,4 @@ public final class Environment implements IEnvironment {
          */
         return isAppInstalled(GOOGLE_PLAY_STORE_PACKAGE_NAME);
     }
-
-    @Override
-    public boolean canHandleIntent(@NonNull final Intent intent) {
-        final List<ResolveInfo> resolveInfoList = appContext
-                .getPackageManager()
-                .queryIntentActivities(intent, MATCH_DEFAULT_ONLY);
-
-        return !resolveInfoList.isEmpty();
-    }
-
 }

@@ -16,8 +16,6 @@
  */
 package com.github.stkent.amplify;
 
-import android.content.Intent;
-
 import androidx.annotation.NonNull;
 
 public interface IEnvironment {
@@ -48,7 +46,4 @@ public interface IEnvironment {
      * @return true if the Google Play Store is installed on the current device; false otherwise
      */
     boolean isGooglePlayStoreInstalled();
-
-    boolean canHandleIntent(@NonNull Intent intent);
-
 }

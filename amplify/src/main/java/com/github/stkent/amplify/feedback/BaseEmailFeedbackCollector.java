@@ -16,6 +16,8 @@
  */
 package com.github.stkent.amplify.feedback;
 
+import static android.content.Intent.ACTION_SENDTO;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -28,8 +30,6 @@ import com.github.stkent.amplify.IEnvironment;
 import com.github.stkent.amplify.tracking.Amplify;
 
 import java.util.Arrays;
-
-import static android.content.Intent.ACTION_SENDTO;
 
 public abstract class BaseEmailFeedbackCollector implements IFeedbackCollector {
 
@@ -61,13 +61,15 @@ public abstract class BaseEmailFeedbackCollector implements IFeedbackCollector {
 
         final Intent emailIntent = getEmailIntent(app, environment, device);
 
-        if (!environment.canHandleIntent(emailIntent)) {
+
+        try {
+            currentActivity.startActivity(emailIntent);
+            currentActivity.overridePendingTransition(0, 0);
+            return true;
+        } catch (Exception exception) {
             Amplify.getLogger().e("Unable to present email client chooser.");
             return false;
         }
-
-        showFeedbackEmailChooser(currentActivity, emailIntent);
-        return true;
     }
 
     @NonNull
@@ -83,10 +85,4 @@ public abstract class BaseEmailFeedbackCollector implements IFeedbackCollector {
         result.putExtra(Intent.EXTRA_TEXT, getBody(app, environment, device));
         return result;
     }
-
-    private void showFeedbackEmailChooser(@NonNull final Activity currentActivity, @NonNull final Intent emailIntent) {
-        currentActivity.startActivity(emailIntent);
-        currentActivity.overridePendingTransition(0, 0);
-    }
-
 }
