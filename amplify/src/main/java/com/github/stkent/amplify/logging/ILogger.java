@@ -16,7 +16,7 @@
  */
 package com.github.stkent.amplify.logging;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * An abstract representation of a logger with debug and error log levels.

@@ -107,7 +107,7 @@ gnag {
 }
 
 dependencies {
-    implementation("com.android.support:appcompat-v7:$supportLibraryVersion")
+    implementation('androidx.appcompat:appcompat:1.0.0')
 
     testImplementation("junit:junit:4.12")
     testImplementation("org.mockito:mockito-core:2.28.2")

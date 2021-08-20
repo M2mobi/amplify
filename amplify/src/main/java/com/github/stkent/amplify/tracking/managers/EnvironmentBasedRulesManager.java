@@ -16,7 +16,7 @@
  */
 package com.github.stkent.amplify.tracking.managers;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.github.stkent.amplify.IEnvironment;
 import com.github.stkent.amplify.tracking.Amplify;

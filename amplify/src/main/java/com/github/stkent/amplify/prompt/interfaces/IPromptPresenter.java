@@ -17,7 +17,7 @@
 package com.github.stkent.amplify.prompt.interfaces;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.github.stkent.amplify.tracking.interfaces.IEventListener;
 

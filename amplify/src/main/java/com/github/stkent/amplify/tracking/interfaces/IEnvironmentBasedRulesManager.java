@@ -16,7 +16,7 @@
  */
 package com.github.stkent.amplify.tracking.interfaces;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * An abstract representation of a class that manages multiple environment based prompt timing

@@ -18,7 +18,7 @@ package com.github.stkent.amplify.prompt;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.github.stkent.amplify.R;
 

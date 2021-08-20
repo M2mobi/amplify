@@ -16,7 +16,7 @@
  */
 package com.github.stkent.amplify.tracking.interfaces;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * An abstract representation of a consuming class that is interested in receiving notifications

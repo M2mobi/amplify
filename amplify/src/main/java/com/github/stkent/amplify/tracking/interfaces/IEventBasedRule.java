@@ -16,7 +16,7 @@
  */
 package com.github.stkent.amplify.tracking.interfaces;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * An abstract representation of a prompt timing rule that depends on a tracked event.

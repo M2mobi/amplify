@@ -16,7 +16,7 @@
  */
 package com.github.stkent.amplify.tracking.interfaces;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * An abstract representation of a class that can track event occurrences over time.

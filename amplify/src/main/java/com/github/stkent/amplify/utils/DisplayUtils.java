@@ -18,12 +18,12 @@ package com.github.stkent.amplify.utils;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.support.annotation.Dimension;
-import android.support.annotation.NonNull;
-import android.support.annotation.Px;
+import androidx.annotation.Dimension;
+import androidx.annotation.NonNull;
+import androidx.annotation.Px;
 import android.util.DisplayMetrics;
 
-import static android.support.annotation.Dimension.DP;
+import static androidx.annotation.Dimension.DP;
 import static android.util.DisplayMetrics.DENSITY_DEFAULT;
 import static java.lang.Math.max;
 import static java.lang.Math.round;

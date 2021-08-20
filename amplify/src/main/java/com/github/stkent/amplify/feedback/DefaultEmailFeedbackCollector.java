@@ -16,7 +16,7 @@
  */
 package com.github.stkent.amplify.feedback;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.github.stkent.amplify.IApp;
 import com.github.stkent.amplify.IDevice;

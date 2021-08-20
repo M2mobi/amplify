@@ -16,8 +16,8 @@
  */
 package com.github.stkent.amplify;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import static com.github.stkent.amplify.utils.Constants.AMAZON_APP_STORE_PACKAGE_NAME;
 import static com.github.stkent.amplify.utils.Constants.AMAZON_UNDERGROUND_PACKAGE_NAME;

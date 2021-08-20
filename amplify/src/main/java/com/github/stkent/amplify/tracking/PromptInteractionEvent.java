@@ -16,7 +16,7 @@
  */
 package com.github.stkent.amplify.tracking;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.github.stkent.amplify.tracking.interfaces.IEvent;
 

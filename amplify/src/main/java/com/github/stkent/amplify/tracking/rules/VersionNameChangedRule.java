@@ -17,13 +17,13 @@
 package com.github.stkent.amplify.tracking.rules;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.annotation.VisibleForTesting;
+import androidx.annotation.NonNull;
+import androidx.annotation.VisibleForTesting;
 
 import com.github.stkent.amplify.App;
 import com.github.stkent.amplify.tracking.interfaces.IEventBasedRule;
 
-import static android.support.annotation.VisibleForTesting.PRIVATE;
+import static androidx.annotation.VisibleForTesting.PRIVATE;
 
 public final class VersionNameChangedRule implements IEventBasedRule<String> {
 

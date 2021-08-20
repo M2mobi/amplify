@@ -16,7 +16,7 @@
  */
 package com.github.stkent.amplify.logging;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * A no-op logger; used to suppress all library logging.
